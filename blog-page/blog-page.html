@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    
+    <style>
+      
+
+
+
+.body{
+    margin: 50px !important;
+}    
+.container{
+    display: flex;
+    justify-content: space-between;            
+}
+.caroselinnerpic1{
+padding-top: 250px;
+padding-bottom: 250px;
+background-image: url(./media/slide_01.jpg);
+text-align: center;
+color: white;
+}
+.caroselinnerpic1 p{
+font-size: 60px;
+
+}
+.caroselinnerpic2{
+padding-top: 250px;
+padding-bottom: 250px;
+background-image: url(./media/slide_02.jpg);
+text-align: center;
+color: white;
+}
+.caroselinnerpic3{
+padding-top: 250px;
+padding-bottom: 250px;
+background-image: url(./media/slide_03.jpg);
+text-align: center;
+color: white;
+}
+
+
+.block1{
+border-bottom: 2px solid lightgray;
+}
+.cardsection{
+padding: 0px 50px 0px 50px;
+}
+.autoblur{
+animation: autobluranimation linear both;
+animation-timeline: view();
+
+}
+@keyframes autobluranimation {
+0%{
+    filter: blur(30px);
+}
+45%, 55%{
+    filter: blur(0px);
+}
+100%{
+    filter: blur(30px);
+}
+
+}
+
+.aboutborder{
+padding-top: 20px;
+padding-bottom: 20px;
+border-bottom: 5px solid lightgray;
+}
+.aboutsectiontop{
+padding: 0px 50px 0px 50px;
+}
+.aboutheading{
+color: navy;
+}
+.aboutbutton{
+border: none;
+border-radius: 10px;
+padding: 10px 15px 10px 15px;
+}
+.about{
+padding-bottom: 50px;
+border-bottom: 5px solid lightgray;
+
+
+}
+.endpart{
+padding: 0px 50px 0px 50px ;
+}
+.purchasebutton{
+border: none;
+border-radius: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- NavBar Starts Here-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#"><h4>My <span class="text-danger">BLog</span></h4></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         <div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">My Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" href="#" tabindex="-1" aria-disabled="true">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  active text-white" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+         </div>
+        </div>
+      </nav>
+      <!-- NavBar Ends Here-->
+      <!-- Carousel Starts Here-->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="caroselinnerpic1">
+              <h1>First Slide of page</h1>
+              <p class="text-danger">Some representative placeholder <br> content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="caroselinnerpic2">
+              <h1>Second Slide of page</h1>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="caroselinnerpic3">
+              <h1>Thierd Slide Of Page</h1>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
+      <!-- Carousel Ends Here-->
+      <!--cards section start here -->
+      <div class="cardsection">
+        <div class="row block1 mt-5">
+          <div class="col-12">
+              <div class="row">
+                 <div class="col-6">
+                  <h4 class="text-start">Latest Blogs</h4>
+                 </div>
+                 <div class="col-6">
+                  <a href="" class="text-end text-danger"><h4>View All Blogs</h4></a>        
+                 </div>
+              </div>
+          </div>
+        </div> 
+        <!-- Cards Starts Here-->
+        <div class="row mt-5">        
+          <div class="col-4 ">
+            <div class="card">
+              <img src="./media/product_01.jpg" class="card-img-top autoblur" alt="...">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-6">
+                        <h5 class="text-primary text-start">Title Goes Here</h5>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti ipsa, doloremque voluptatem optio quam!</p>
+                    </div>
+                   <div class="row">
+                        <div class="row text-end">
+                          <a href="" class="text-danger text-end"> View More</a>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-4 ">
+            <div class="card">
+              <img src="./media/product_01.jpg" class="card-img-top autoblur" alt="...">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-6">
+                        <h5 class="text-primary text-start">Title Goes Here</h5>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti ipsa, doloremque voluptatem optio quam!</p>
+                    </div>
+                   <div class="row">
+                        <div class="row text-end">
+                          <a href="" class="text-danger text-end"> View More</a>
+                    </div>
+                   </div>
+                  </div>
+                  
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-4 ">
+            <div class="card">
+              <img src="./media/product_01.jpg" class="card-img-top autoblur" alt="...">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-6">
+                        <h5 class="text-primary text-start">Title Goes Here</h5>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti ipsa, doloremque voluptatem optio quam!</p>
+                    </div>
+                   <div class="row">
+                        <div class="row text-end">
+                          <a href="" class="text-danger text-end"> View More</a>
+                    </div>
+                   </div>
+                  </div>
+                  
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">        
+            <div class="col-4 ">
+              <div class="card">
+                <img src="./media/product_01.jpg" class="card-img-top autoblur" alt="...">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-6">
+                          <h5 class="text-primary text-start">Title Goes Here</h5>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti ipsa, doloremque voluptatem optio quam!</p>
+                      </div>
+                     <div class="row">
+                          <div class="row text-end">
+                            <a href="" class="text-danger text-end"> View More</a>
+                      </div>
+                     </div>
+                    </div>
+                    
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-4 ">
+              <div class="card">
+                <img src="./media/product_01.jpg" class="card-img-top autoblur" alt="...">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-6">
+                          <h5 class="text-primary text-start">Title Goes Here</h5>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti ipsa, doloremque voluptatem optio quam!</p>
+                      </div>
+                     <div class="row">
+                          <div class="row text-end">
+                            <a href="" class="text-danger text-end"> View More</a>
+                      </div>
+                     </div>
+                    </div>
+                    
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-4 ">
+              <div class="card">
+                <img src="./media/product_01.jpg" class="card-img-top autoblur" alt="...">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-6">
+                          <h5 class="text-primary text-start">Title Goes Here</h5>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti ipsa, doloremque voluptatem optio quam!</p>
+                      </div>
+                     <div class="row">
+                          <div class="row text-end">
+                            <a href="" class="text-danger text-end"> View More</a>
+                      </div>
+                     </div>
+                    </div>
+                    
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      <!-- Cards Ends Here-->
+      <!--cards section ends here-->
+      <!-- about section top Starts Here-->
+      <div class="aboutsectiontop">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="aboutborder">About My Blog</h3>
+          </div>
+        </div>
+      </div>
+      <!-- about section top ends Here-->
+      <!-- about secction start Here-->
+      <div class="container mt-5" >
+        <div class="row about">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6">
+                <h5 class="aboutheading">Looking For The Best Blogs?</h5>
+                <p><span class="text-primary">Lorem ipsum,</span> dolor sit amet consectetur adipisicing elit. Corrupti consequatur incidunt ab modi sed non iusto impedit, <span class="text-primary">ex veritatis aliquid</span>.</p>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem ipsum dolor sit.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <button class="bg-danger aboutbutton">Read More</button>
+              </div>
+              <div class="col-6">
+                <img class="align-center" src="./media/feature-image.jpg" alt="" height="80%" width="80%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about section ends Here-->
+      <!-- end part starts Here-->      
+        <div class="endpart">
+          <div class="row mt-5 pageending">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-10">
+                  <h6 class="text-primary"> Creative & Unique <span><b>My</b></span> Blog</h6>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, Lorem ipsu Lorem, ipsum dolor. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>      
+      <!-- end part ends Here-->
+      <!--fotter starts here-->
+     <p class="text-center mt-5"> COPYRIGHT ¢ 2020 My Blog Cu LTD. - DESIGN: <span class="text-danger">TEMPLATEMO</span></p>
+      <!--footer ends here-->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

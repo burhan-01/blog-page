@@ -1,0 +1,92 @@
+
+
+
+
+.body{
+    margin: 50px !important;
+}    
+.container{
+    display: flex;
+    justify-content: space-between;            
+}
+.caroselinnerpic1{
+padding-top: 250px;
+padding-bottom: 250px;
+background-image: url(./media/slide_01.jpg);
+text-align: center;
+color: white;
+}
+.caroselinnerpic1 p{
+font-size: 60px;
+
+}
+.caroselinnerpic2{
+padding-top: 250px;
+padding-bottom: 250px;
+background-image: url(./media/slide_02.jpg);
+text-align: center;
+color: white;
+}
+.caroselinnerpic3{
+padding-top: 250px;
+padding-bottom: 250px;
+background-image: url(./media/slide_03.jpg);
+text-align: center;
+color: white;
+}
+
+
+.block1{
+border-bottom: 2px solid lightgray;
+}
+.cardsection{
+padding: 0px 50px 0px 50px;
+}
+.autoblur{
+animation: autobluranimation linear both;
+animation-timeline: view();
+
+}
+@keyframes autobluranimation {
+0%{
+    filter: blur(30px);
+}
+45%, 55%{
+    filter: blur(0px);
+}
+100%{
+    filter: blur(30px);
+}
+
+}
+
+.aboutborder{
+padding-top: 20px;
+padding-bottom: 20px;
+border-bottom: 5px solid lightgray;
+}
+.aboutsectiontop{
+padding: 0px 50px 0px 50px;
+}
+.aboutheading{
+color: navy;
+}
+.aboutbutton{
+border: none;
+border-radius: 10px;
+padding: 10px 15px 10px 15px;
+}
+.about{
+padding-bottom: 50px;
+border-bottom: 5px solid lightgray;
+
+
+}
+.endpart{
+padding: 0px 50px 0px 50px ;
+}
+.purchasebutton{
+border: none;
+border-radius: 10px;
+}
+
